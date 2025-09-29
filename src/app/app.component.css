@@ -1,6 +1,6 @@
 .main-component {
     width: 100%;
-    background-color: rgb(31, 30, 34); 
+    background-color: var(--color-background);
     height: 100%;
 }
 
