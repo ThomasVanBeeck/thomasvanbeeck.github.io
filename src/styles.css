@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: white;
+}
+
+app-root {
+  background-color: rgb(44, 44, 44);
+  display: block;
+  height: 100%;
+}

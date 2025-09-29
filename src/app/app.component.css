@@ -1,0 +1,13 @@
+.main-component {
+    width: 100%;
+    background-color: rgb(31, 30, 34); 
+    height: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .main-component {
+    width: 768px;
+    margin: 0 auto;
+    }
+}
