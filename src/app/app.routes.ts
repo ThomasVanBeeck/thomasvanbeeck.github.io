@@ -4,7 +4,7 @@ import { ReposComponent } from './pages/repos/repos.component';
 import { ContactComponent } from './pages/contact/contact.component';
 
 export const routes: Routes = [
-  { path: '', component: AboutmeComponent },
+  { path: '', redirectTo: 'aboutme', pathMatch: 'full' },
   { path: 'aboutme', component: AboutmeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'repos', component: ReposComponent},

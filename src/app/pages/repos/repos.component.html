@@ -1,6 +1,125 @@
-<article>
-    <h1>Dit is een artikel</h1>
-    <p> Dit is een eerste paragraaf van het artikel</p>
-    <p>De tweede paragraaf van het artikel</p>
-    <p><a href="https://www.github.com" class="repolink" targetNewTab>dit is een repository link</a></p>
-    </article>
+<article id="abc-omni-play">
+
+    <h1>ABC Omni-PLAY Mobile Application</h1>
+
+    <ul class="article-tags">
+        <li>Angular</li>
+        <li>Entra ID</li>
+        <li>Ionic</li>
+        <li>Java</li>
+        <li>Spring Boot</li>
+        <li>REST</li>
+        <li>PostgreSQL</li>
+        <li>Mobile App</li>
+        <li>Web</li>
+    </ul>
+    <h2>Frontend and Key Feature</h2>
+<p>
+    During my internship, I developed the Angular/Ionic frontend for a comprehensive internal employee engagement application.
+    My main contribution was the dynamic 'PLAY' feature, designed to let employees create and join company-wide games and competitions.
+    This platform was a crucial driver for increasing internal engagement.
+</p>
+<h2>Backend and Architecture</h2>
+<p>
+    The application is powered by a secure Java Spring Boot REST backend utilizing Microsoft Entra ID and a PostgreSQL database.
+    The backend employs a clean, layered architecture, specifically implementing the Ports and Adapters design pattern (also known as Hexagonal Architecture).
+    This pattern is evident in the distinction between the Port (defining business interfaces) and the Adapter (implementing the interface for external tools like the Controller or Repository).
+    I specifically chose to implement manual data mapping to ensure a deep, practical understanding of data integrity across all layers.
+</p>
+
+<h2>Testing Strategy</h2>
+<p>
+To ensure code quality and reliability, I implemented targeted unit and integration tests for the backend layers.
+Specifically, I utilized Spring Boot's testing framework along with Mockito to write Controller layer tests.
+These tests verify the correct handling of HTTP requests, ensuring that both successful resource retrieval (status().isOk()) and edge cases like resources not being found (status().isNotFound()) are handled correctly.
+Crucially, I employed Mockito's static mocking capabilities to isolate the Mapper layer during Controller tests, guaranteeing that the business logic (Service layer) and the mapping logic were correctly integrated and independently verifiable.
+</p>
+
+<h2>Repositories</h2>
+<p>
+    <a href="https://github.com/ThomasVanBeeck/abc-omni-play-backend" class="repolink" targetNewTab>Java Backend Repository</a>
+    <a href="https://github.com/ThomasVanBeeck/abc-omni-play-frontend" class="repolink" targetNewTab>Angular/Ionic Frontend Repository</a>
+</p>
+
+    <div class="video-responsive">
+        <iframe src="https://www.youtube-nocookie.com/embed/V8qyqSIck9k?si=yJrTahyMz56I4wfu"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+
+</article>
+
+<article id="openweather-drone">
+
+    <h1>Virtual Drone Environment using OpeanWeatherMap API</h1>
+
+    <ul class="article-tags">
+        <li>C-sharp</li>
+        <li>Unity</li>
+        <li>API</li>
+        <li>Desktop App</li>
+    </ul>
+
+    <h2>Project Goal</h2>
+    <p>
+        This project aims to simulate a drone flying within a virtual sandbox environment.
+        The environment itself is dynamic: it uses particle systems and terrain assets (like grass) that adapt in real-time based on a set geographic location.
+        This location-specific data, such as weather and atmospheric conditions, is fetched using the OpenWeatherMap API.
+    </p>
+
+    <h2>Flight Mode Transition</h2>
+    <p>The drone defaults to 'Auto-Pilot Mode', which enforces flight boundaries (geofencing).
+        To fly beyond these boundaries, engage 'Manual Override'.
+        Upon the release of manual controls, the system instantly switches back to Auto-Pilot,
+        maintaining flight stability and re-enforcing the established box limits.
+    </p>
+
+    <h2>Repository</h2>
+    <p>
+    <a href="https://github.com/ThomasVanBeeck/OpenWeatherMap_API_Drone" class="repolink" targetNewTab>Unity Repository</a>
+    </p>
+
+    <div class="video-responsive">
+        <iframe src="https://www.youtube-nocookie.com/embed/3ZhTuayt0OU?si=Sx5ByyTxE_CI233R"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+</article>
+
+
+
+<article id="led-watch">
+
+    <h1>LED Watch (PCB Design + Programming)</h1>
+
+    <ul class="article-tags">
+        <li>ATtiny</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>KiCAD</li>
+        <li>ESD</li>
+        <li>PCB Design</li>
+        <li>LEDs</li>
+    </ul>
+
+    <h2>Project Goal</h2>
+    <p>
+        The main goal was to create a digital watch that represents time in a creative way using LEDs.
+        The time is read via colour-shifting LEDs, with each light representing a 5-minute interval.
+        The custom firmware features dynamic light effects that automatically activate during hour and minute transitions.
+    </p>
+
+    <h2>Repository</h2>
+    <p>
+    <a href="https://github.com/ThomasVanBeeck/watch_with_leds" class="repolink" targetNewTab>LED Watch Repository</a>
+    </p>
+
+    <div class="video-responsive">
+        <iframe src="https://www.youtube-nocookie.com/embed/8Q7m4WvmXpc?si=vYxdn1pca7QD42mT"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+</article>
