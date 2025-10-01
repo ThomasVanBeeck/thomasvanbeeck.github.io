@@ -2,7 +2,7 @@
 
 .main-nav {
   /* Plak het menu bovenaan vast, zodat het altijd zichtbaar is */
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   
@@ -25,9 +25,6 @@
 .main-nav li {
   /* Stijl de knop-elementen */
   padding: 0px;
-}
-
-.main-nav li:hover {
 }
 
 .main-nav a {
@@ -56,7 +53,7 @@
 @media screen and (min-width: 768px) {
     .main-nav {
     /* Plak het menu bovenaan vast, zodat het altijd zichtbaar is */
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 768px;
     margin: 0 auto;

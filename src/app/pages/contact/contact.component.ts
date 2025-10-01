@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { NewTabDirective } from '../../shared/directives/new-tab.directive';
+
 
 @Component({
   selector: 'app-contact',
-  imports: [],
+  imports: [NewTabDirective],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
