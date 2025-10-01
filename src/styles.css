@@ -8,6 +8,7 @@
   --color-test: rgb(255, 0, 50);
   --color-text-dark: #000;
   --color-text-light: #fff;
+  --color-text-link: rgb(105, 231, 193);
 }
 
 @font-face {
@@ -47,14 +48,19 @@ a {
 
 .repolink {
   text-decoration: underline;
+  color: var(--color-text-link);
 }
 
 article {
   background-color: var(--color-background-light);
   background-image: linear-gradient(var(--color-background-lighter) 0%, var(--color-background-light) 22%, var(--color-background-light) 100%); 
   border-color: var(--color-primary);
-  border-top: 2px dashed var(--color-primary);
-  border-bottom: 2px dashed var(--color-primary);
+  border-top: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  margin: 1.2rem 0rem;
+  padding: 1rem;
 }
 
 h1 {
@@ -64,3 +70,21 @@ h1 {
 article p {
   font-size: 0.8rem;
 }
+
+@media screen and (min-width: 768px) {
+    .main-component {
+    width: 768px;
+    margin: 0 auto;
+    }
+    
+    article {
+      border-top: 2px solid var(--color-primary);
+      border-bottom: 2px solid var(--color-primary);
+      border-left: 2px solid var(--color-primary);
+      border-right: 2px solid var(--color-primary);
+      border-radius: 15px;
+      color: var(--color-text-light);
+      background-color: var(--color-background-light);
+      margin: 1.5rem;
+    }
+  }
