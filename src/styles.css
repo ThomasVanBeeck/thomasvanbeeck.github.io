@@ -3,7 +3,7 @@
   --color-primary-hover: rgb(110, 88, 215);
   --color-primary-active: rgb(91,80,235);
   --color-background: rgb(25, 24, 37); 
-  --color-background-lighter: rgb(55, 55, 82);
+  --color-background-lighter: rgb(75, 75, 114);
   --color-background-light: rgb(43, 43, 63);
 
   --color-test: rgb(255, 0, 50);
@@ -56,7 +56,22 @@ a.repolink {
 
 article {
   background-color: var(--color-background-light);
-  background-image: linear-gradient(var(--color-background-lighter) 0%, var(--color-background-light) 22%, var(--color-background-light) 100%); 
+
+    background-image: 
+    linear-gradient(var(--color-background-lighter) 0%, var(--color-background-light) 100%),
+    linear-gradient(var(--color-background-light), var(--color-background-light)); 
+    
+  background-size: 
+    100% 3rem,
+    100% auto;
+    background-repeat: no-repeat; 
+  
+  background-position: 
+    top,
+    0 3rem; 
+
+
+
   border-color: var(--color-primary);
   border-top: 2px solid var(--color-primary);
   border-bottom: 2px solid var(--color-primary);
