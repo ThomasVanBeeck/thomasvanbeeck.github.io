@@ -30,7 +30,7 @@
 
 html,
 body {
-  font-size: 17px;
+  font-size: 16px;
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
@@ -82,11 +82,11 @@ article {
 }
 
 h1 {
-  font-size: 1.25rem;
+  font-size: 1.22rem;
 }
 
 h2 {
-  font-size: 1.15rem;
+  font-size: 1.12rem;
 }
 
 article p {
@@ -104,7 +104,7 @@ ul.article-tags {
   padding: 0.3rem 1rem;
   border: 0px solid transparent;
   border-radius: 15px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .article-tags li:nth-child(odd) {
