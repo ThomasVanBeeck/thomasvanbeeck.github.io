@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NewTabDirective } from '../../shared/directives/new-tab.directive';
 
 @Component({
   selector: 'app-aboutme',
-  imports: [NewTabDirective],
+  imports: [],
   templateUrl: './aboutme.component.html',
   styleUrl: './aboutme.component.css'
 })

@@ -182,6 +182,10 @@ ul.article-tags {
   overflow: hidden;
 }
 
+.img-responsive {
+  width: 100%;
+}
+
 .video-responsive iframe {
   position: absolute;
   top: 0;
