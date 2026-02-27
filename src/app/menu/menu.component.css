@@ -26,9 +26,11 @@
   font-weight: bold;
   cursor: pointer;
   border: 1px solid transparent;
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 0px;
   padding: 12px 10px;
-  transition: color 0.15s, background-color 0.15s;
+  transition:
+    color 0.15s,
+    background-color 0.15s;
 }
 
 .main-nav a:hover {
@@ -42,7 +44,7 @@
 }
 
 @media screen and (min-width: 600px) {
-    .main-nav ul {
+  .main-nav ul {
     justify-content: flex-start;
   }
 }
@@ -56,6 +58,4 @@
     background-color: rgb(164, 114, 255);
     z-index: 1000;
   }
-
-
 }
